@@ -81,10 +81,6 @@ class ScrCast private constructor(private val activity: ComponentActivity) {
 
     private val dialogPermissionListener: DialogOnAnyDeniedMultiplePermissionsListener = DialogOnAnyDeniedMultiplePermissionsListener.Builder
         .withContext(activity)
-        .withTitle("Storage permissions")
-        .withMessage("Storage permissions are needed to store the screen recording")
-        .withButtonText(android.R.string.ok)
-        .withIcon(R.drawable.ic_storage_permission_dialog)
         .build()
 
     private val defaultNotificationProvider by lazy {
